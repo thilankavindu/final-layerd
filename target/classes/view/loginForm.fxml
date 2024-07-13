@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane fx:id="rootNode" prefHeight="655.0" prefWidth="1153.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProject.controller.LoginFormController">
+   <children>
+      <Label layoutX="725.0" layoutY="298.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="858.0" layoutY="62.0" text="Login">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="770.0" layoutY="139.0" text="Login Your Account Here">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserId" layoutX="725.0" layoutY="224.0" prefHeight="36.0" prefWidth="275.0" promptText="UserId" />
+      <TextField fx:id="txtPassword" layoutX="725.0" layoutY="328.0" prefHeight="36.0" prefWidth="275.0" promptText="Password" />
+      <Label layoutX="725.0" layoutY="194.0" text="UserId">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="725.0" layoutY="405.0" mnemonicParsing="false" onAction="#btnLoginOnAction" prefHeight="42.0" prefWidth="275.0" style="-fx-background-color: brown;" text="Login" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="947.0" layoutY="472.0" onAction="#linkRegistrationOnAction" text="Register">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="731.0" layoutY="476.0" text="Don't Have an Account?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="656.0" fitWidth="570.0">
+         <image>
+            <Image url="@../Image/libraryimage.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="74.0" fitWidth="73.0" layoutX="772.0" layoutY="25.0">
+         <image>
+            <Image url="@../Image/user-login-icon-1948x2048-nocsasoq.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="756.0" layoutY="105.0" prefHeight="6.0" prefWidth="192.0" style="-fx-background-color: BLACK;" />
+   </children>
+</AnchorPane>

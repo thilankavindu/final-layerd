@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="rootNode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1323.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProject.controller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111010" height="700.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" style="-:#363434;" width="212.0" />
+      <Button layoutX="-2.0" layoutY="78.0" mnemonicParsing="false" onAction="#btnBackOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="         Dashboard" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Button>
+      <Text fill="#fffdfd" layoutX="8.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Features">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Text>
+      <Button layoutY="197.0" mnemonicParsing="false" onAction="#btnManageBooksOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="  Books" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button layoutY="272.0" mnemonicParsing="false" onAction="#btnManageMembersOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="       Members" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button layoutX="-1.0" layoutY="603.0" mnemonicParsing="false" onAction="#btnLogoutOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #1e90ff;" text="Log Out" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Text fill="#220404" layoutX="179.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Text>
+      <Button layoutY="353.0" mnemonicParsing="false" onAction="#btnManageIssueBooksOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="          Issue Book" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <Button layoutY="429.0" mnemonicParsing="false" onAction="#btnManageReturnBooksOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="            Return Book" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font></Button>
+      <AnchorPane fx:id="smallrootNode" layoutX="209.0" layoutY="43.0" prefHeight="655.0" prefWidth="1153.0">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" height="177.0" layoutY="-1.0" stroke="BLACK" strokeType="INSIDE" width="1118.0">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop color="#72e840" />
+                        <Stop color="WHITE" offset="1.0" />
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </Rectangle>
+            <ImageView fitHeight="495.0" fitWidth="1111.0" layoutX="3.0" layoutY="176.0" opacity="0.75">
+               <image>
+                  <Image url="@../Image/images%20(2).jpeg" />
+               </image>
+            </ImageView>
+            <AnchorPane layoutX="700.0" layoutY="43.0" opacity="0.74" prefHeight="219.0" prefWidth="247.0" style="-fx-background-color: #bdc3c7;">
+               <children>
+                  <Label layoutX="67.0" layoutY="101.0" text="Book Count">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblBookCount" layoutX="103.0" layoutY="139.0" text="19">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="62.0" fitWidth="87.0" layoutX="80.0" layoutY="21.0">
+                     <image>
+                        <Image url="@../Image/books.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblBook" layoutX="200.0" layoutY="282.0" opacity="0.85" prefHeight="151.0" prefWidth="699.0">
+               <columns>
+                  <TableColumn fx:id="colBook_Id" prefWidth="71.0" text="Book_Id" />
+                  <TableColumn fx:id="colBook_Name" prefWidth="88.0" text="Book_Name" />
+                  <TableColumn fx:id="colISBN" prefWidth="94.0" text="ISBN" />
+                  <TableColumn fx:id="colAuthor" prefWidth="94.0" text="Author" />
+                  <TableColumn fx:id="colPublisher" prefWidth="88.0" text="Publisher" />
+                  <TableColumn fx:id="colBook_Type" prefWidth="88.0" text="Book_Type" />
+                  <TableColumn fx:id="colBook_Qty" prefWidth="88.0" text="Book_Qty" />
+                  <TableColumn fx:id="colBook_Price" prefWidth="88.0" text="Book_Price" />
+               </columns>
+            </TableView>
+            <AnchorPane layoutX="154.0" layoutY="43.0" opacity="0.74" prefHeight="219.0" prefWidth="247.0" style="-fx-background-color: #bdc3c7;">
+               <children>
+                  <Label layoutX="51.0" layoutY="94.0" text="Member Count">
+                     <font>
+                        <Font name="System Bold Italic" size="21.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lblMemberCount" layoutX="95.0" layoutY="128.0" text="29">
+                     <font>
+                        <Font name="System Bold Italic" size="36.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="73.0" fitWidth="100.0" layoutX="71.0" layoutY="19.0">
+                     <image>
+                        <Image url="@../Image/members.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tblMember" layoutX="200.0" layoutY="470.0" opacity="0.85" prefHeight="168.0" prefWidth="699.0">
+               <columns>
+                  <TableColumn fx:id="colId" prefWidth="138.0" text="Member_Id" />
+                  <TableColumn fx:id="colName" prefWidth="157.0" text="Member_Name" />
+                  <TableColumn fx:id="colAddress" prefWidth="195.0" text="Member_Address" />
+                  <TableColumn fx:id="colContact" prefWidth="212.0" text="Member_Contact" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#111010" height="45.0" layoutX="212.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" style="-:#363434;" width="1153.0" />
+      <ImageView fitHeight="19.0" fitWidth="33.0" layoutX="47.0" layoutY="207.0">
+         <image>
+            <Image url="@../Image/books.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="47.0" layoutY="279.0">
+         <image>
+            <Image url="@../Image/members.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="47.0" layoutY="360.0">
+         <image>
+            <Image url="@../Image/issue.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="51.0" layoutY="436.0">
+         <image>
+            <Image url="@../Image/return.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="602.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Management System">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#93a7c3" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <ImageView fitHeight="39.0" fitWidth="48.0" layoutX="12.0" layoutY="4.0">
+         <image>
+            <Image url="@../Image/iconmonstr-line-four-horizontal-lined.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="25.0" layoutX="48.0" layoutY="82.0">
+         <image>
+            <Image url="@../Image/dashboard.png" />
+         </image>
+      </ImageView>
+      <Button layoutY="506.0" mnemonicParsing="false" onAction="#btnReportOnAction" prefHeight="39.0" prefWidth="212.0" style="-fx-background-color: #363434;" text="   Report" textFill="#f8f7f6">
+         <font>
+            <Font name="System Bold Italic" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="44.0" layoutY="513.0">
+         <image>
+            <Image url="@../Image/report.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="pane" prefHeight="655.0" prefWidth="1153.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProject.controller.IssueBookFormController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="251.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="1153.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="0.2523809523809524" startX="0.009523809523809525" startY="0.0047619047619048005">
+               <stops>
+                  <Stop color="#62b55c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <ImageView fitHeight="57.0" fitWidth="66.0" layoutX="473.0" layoutY="27.0">
+         <image>
+            <Image url="@../Image/issue.png" />
+         </image>
+      </ImageView>
+        <Pane layoutX="476.0" layoutY="91.0" prefHeight="7.0" prefWidth="200.0" style="-fx-background-color: black;" />
+        <Label layoutX="236.0" layoutY="139.0" prefHeight="27.0" prefWidth="137.0" text="Issue Id           :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="229.0" layoutY="186.0" prefHeight="27.0" prefWidth="143.0" text="Member Id       :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblMemberName" layoutX="804.0" layoutY="186.0" prefHeight="27.0" prefWidth="150.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblIssueId" layoutX="384.0" layoutY="135.0" prefHeight="35.0" prefWidth="156.0" textFill="#c30909">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="542.0" layoutY="50.0" text="Issue Book">
+            <font>
+                <Font name="System Bold Italic" size="24.0" />
+            </font>
+        </Label>
+        <Label layoutX="648.0" layoutY="139.0" prefHeight="27.0" prefWidth="143.0" text="Issue Date        :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblIssueDate" layoutX="806.0" layoutY="139.0" prefHeight="27.0" prefWidth="183.0" textFill="#c30909">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="646.0" layoutY="187.0" text="Member Name :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="cmbMemberid" layoutX="383.0" layoutY="187.0" onAction="#cmbMemberOnAction" prefHeight="25.0" prefWidth="156.0" />
+      <ImageView fitHeight="405.0" fitWidth="1153.0" layoutX="-2.0" layoutY="249.0" opacity="0.24">
+         <image>
+            <Image url="@../Image/images%20(2).jpeg" />
+         </image>
+      </ImageView>
+        <Button layoutX="939.0" layoutY="592.0" mnemonicParsing="false" onAction="#btnIssueBookOnAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="IssueBook">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+        <TableView fx:id="tblIssueCart" layoutX="458.0" layoutY="292.0" prefHeight="290.0" prefWidth="587.0">
+            <columns>
+                <TableColumn fx:id="colBookid" prefWidth="85.0" text="Book Id :" />
+                <TableColumn fx:id="colBookname" prefWidth="98.0" text="Book Name :" />
+                <TableColumn fx:id="colisbn" prefWidth="89.0" text="ISBN" />
+                <TableColumn fx:id="colauthor" prefWidth="105.0" text="Author" />
+                <TableColumn fx:id="colpublisher" prefWidth="105.0" text="Publisher" />
+                <TableColumn fx:id="colBooktype" prefWidth="102.0" text="Book_Type" />
+            </columns>
+        </TableView>
+        <Button layoutX="814.0" layoutY="592.0" mnemonicParsing="false" onAction="#btnAddToCartOnAction" prefHeight="35.0" prefWidth="100.0" style="-fx-background-color: lightgreen;" text="Add to Cart">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font></Button>
+        <Label fx:id="lblBookName" layoutX="228.0" layoutY="342.0" prefHeight="27.0" prefWidth="150.0" textFill="#0a0a0a">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="78.0" layoutY="509.0" prefHeight="27.0" prefWidth="136.0" text="Book_Type       :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="464.0" prefHeight="27.0" prefWidth="136.0" text="Publisher         :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblPublisher" layoutX="229.0" layoutY="464.0" prefHeight="27.0" prefWidth="150.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         <textFill>
+            <LinearGradient endX="1.0" startY="0.4095238095238095">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#1b1a1a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+        </Label>
+        <ComboBox fx:id="cmbBookid" layoutX="226.0" layoutY="305.0" onAction="#cmbBookOnAction" prefWidth="150.0" />
+        <Label layoutX="81.0" layoutY="342.0" prefHeight="27.0" prefWidth="136.0" text="Book Name     :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="384.0" prefHeight="27.0" prefWidth="137.0" text="ISBN                 :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblISBN" layoutX="229.0" layoutY="384.0" prefHeight="27.0" prefWidth="143.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="81.0" layoutY="423.0" prefHeight="27.0" prefWidth="136.0" text="Author             :">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label layoutX="79.0" layoutY="303.0" text="Select Book Id : ">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+         <textFill>
+            <LinearGradient endX="1.0">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#1b1a1a" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill>
+        </Label>
+        <Label fx:id="lblAuthor" layoutX="229.0" layoutY="423.0" prefHeight="27.0" prefWidth="143.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblBooktype" layoutX="225.0" layoutY="509.0" prefHeight="27.0" prefWidth="150.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

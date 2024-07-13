@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.21.2.final using JasperReports Library version 6.21.2-8434a0bd7c3bbc37cbf916f2968d35e4b165821a  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Bill" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="005f90e6-ddca-4667-8de1-48a42ea1a65d">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<queryString language="SQL">
+		<![CDATA[select * from issuebook]]>
+	</queryString>
+	<field name="Issue_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Issue_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Issue_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+	</field>
+	<field name="Member_id" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="Member_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="Member_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+	</field>
+	<field name="Issue_date" class="java.sql.Date">
+		<property name="com.jaspersoft.studio.field.name" value="Issue_date"/>
+		<property name="com.jaspersoft.studio.field.label" value="Issue_date"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="issuebook"/>
+	</field>
+	<group name="Issue_id">
+		<groupExpression><![CDATA[$F{Issue_id}]]></groupExpression>
+	</group>
+	<group name="Member_id">
+		<groupExpression><![CDATA[$F{Member_id}]]></groupExpression>
+	</group>
+	<group name="Issue_date">
+		<groupExpression><![CDATA[$F{Issue_date}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="138" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="0" width="130" height="30" uuid="fcdd2d74-a280-4f53-be9b-b7b7e1fa3757"/>
+				<textElement>
+					<font size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Public Library]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="190" y="30" width="193" height="54" uuid="05dd50a6-9c6c-4035-a963-8d7c0bc9750d"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="12"/>
+				</textElement>
+				<text><![CDATA[No 101 Barnes Ratwatta Mawatha, Balangoda 70100]]></text>
+			</staticText>
+			<rectangle>
+				<reportElement x="30" y="88" width="520" height="1" backcolor="#080707" uuid="c8f07e1a-ffa4-43bb-b701-3d93d6f71ce1"/>
+			</rectangle>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="11" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="33" splitType="Stretch">
+			<staticText>
+				<reportElement x="119" y="1" width="93" height="30" uuid="0907b802-b4f2-40b8-b729-ed6e1cd80528">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9eba28-680e-4d9f-a1d6-cc25dfab73bc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Issue Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="212" y="1" width="108" height="30" uuid="9a5a5ea3-e5b0-4d55-9e20-02760e061fd9">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7088e986-110d-4dfb-af1b-829d0ad6621c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Member Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="320" y="1" width="100" height="30" uuid="492d0243-2a28-45fb-9055-7b10bba02204">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="94d960b2-591e-4e6c-9ab7-0f443f34890f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<text><![CDATA[Issue Date]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="120" y="0" width="92" height="30" uuid="a9c7360c-43f2-4f45-aa70-4581347290fb">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="8f9eba28-680e-4d9f-a1d6-cc25dfab73bc"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Issue_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="212" y="0" width="108" height="30" uuid="cf788ac6-ba03-4259-bdd6-94986caaafaa">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7088e986-110d-4dfb-af1b-829d0ad6621c"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Member_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="320" y="0" width="100" height="30" uuid="7365c028-31f6-4637-bf9a-51d0dffcc88c">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="94d960b2-591e-4e6c-9ab7-0f443f34890f"/>
+				</reportElement>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{Issue_date}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="89" splitType="Stretch">
+			<rectangle>
+				<reportElement x="30" y="88" width="520" height="1" backcolor="#080707" uuid="78d91d31-bbe7-4100-b821-209ab946f712"/>
+			</rectangle>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

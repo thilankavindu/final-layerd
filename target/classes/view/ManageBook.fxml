@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="root" prefHeight="655.0" prefWidth="1153.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProject.controller.BookFormController">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="1153.0" layoutX="-2.0" layoutY="108.0" opacity="0.38">
+         <image>
+            <Image url="@../Image/images%20(2).jpeg" />
+         </image>
+      </ImageView>
+      <Button layoutX="213.0" layoutY="443.0" mnemonicParsing="false" onAction="#btnAddOnAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #ed5e02;" text="Add" />
+      <Label layoutX="231.0" layoutY="361.0" text="Author">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtISBN" layoutX="230.0" layoutY="300.0" prefHeight="35.0" prefWidth="275.0" promptText="ISBN" />
+      <Label layoutX="233.0" layoutY="186.0" text="Book_Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="612.0" layoutY="107.0" text="Publisher">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="272.0" text="Book_Qty">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="186.0" text="Book_Type">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblBook" layoutX="197.0" layoutY="490.0" prefHeight="151.0" prefWidth="699.0">
+         <columns>
+            <TableColumn fx:id="colBook_Id" prefWidth="71.0" text="Book_Id" />
+            <TableColumn fx:id="colBook_Name" prefWidth="88.0" text="Book_Name" />
+            <TableColumn fx:id="colISBN" prefWidth="94.0" text="ISBN" />
+            <TableColumn fx:id="colAuthor" prefWidth="94.0" text="Author" />
+            <TableColumn fx:id="colPublisher" prefWidth="88.0" text="Publisher" />
+            <TableColumn fx:id="colBook_Type" prefWidth="88.0" text="Book_Type" />
+            <TableColumn fx:id="colBook_Qty" prefWidth="88.0" text="Book_Qty" />
+            <TableColumn fx:id="colBook_Price" prefWidth="88.0" text="Book_Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="233.0" layoutY="107.0" text="Book_Id" textFill="#070707">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="611.0" layoutY="361.0" text="Book_Price">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="740.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnDeleteOnAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #ed5e02;" text="Delete" />
+      <TextField fx:id="txtBookName" layoutX="230.0" layoutY="213.0" prefHeight="35.0" prefWidth="275.0" promptText="Book_Name" />
+      <TextField fx:id="txtPublisher" layoutX="609.0" layoutY="137.0" prefHeight="35.0" prefWidth="275.0" promptText="Publisher" />
+      <TextField fx:id="txtBookPrice" layoutX="609.0" layoutY="385.0" prefHeight="35.0" prefWidth="275.0" promptText="Book_Price" />
+      <TextField fx:id="txtBookQty" layoutX="609.0" layoutY="300.0" prefHeight="35.0" prefWidth="275.0" promptText="Book_Qty" />
+      <TextField fx:id="txtAuthor" layoutX="230.0" layoutY="385.0" prefHeight="35.0" prefWidth="275.0" promptText="Author" />
+      <Label layoutX="231.0" layoutY="272.0" text="ISBN">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtBookId" layoutX="230.0" layoutY="137.0" prefHeight="35.0" prefWidth="275.0" promptText="Book_Id" />
+      <TextField fx:id="txtBookType" layoutX="609.0" layoutY="213.0" prefHeight="35.0" prefWidth="275.0" promptText="Book_Type" />
+      <Button layoutX="451.0" layoutY="437.0" mnemonicParsing="false" onAction="#btnUpdateOnAction" prefHeight="25.0" prefWidth="134.0" style="-fx-background-color: #ed5e02;" text="Update" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="108.0" layoutX="-2.0" stroke="BLACK" strokeType="INSIDE" width="1153.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#1fff84" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="536.0" layoutY="39.0" text="Manage Books" textFill="#252424">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="51.0" fitWidth="75.0" layoutX="448.0" layoutY="31.0">
+         <image>
+            <Image url="@../Image/books.png" />
+         </image>
+      </ImageView>
+      <Pane layoutX="455.0" layoutY="89.0" prefHeight="5.0" prefWidth="251.0" style="-fx-background-color: BLACK;" />
+   </children>
+</AnchorPane>

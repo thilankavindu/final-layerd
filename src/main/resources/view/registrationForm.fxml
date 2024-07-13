@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="758.0" prefWidth="1153.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.finalProject.controller.RegistrationFormController">
+   <children>
+      <ImageView fitHeight="758.0" fitWidth="663.0">
+         <image>
+            <Image url="@../Image/libraryimage.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="787.0" layoutY="467.0" text="Password">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="787.0" layoutY="362.0" text="Name">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="912.0" layoutY="66.0" text="Register">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="834.0" layoutY="192.0" text="Register Your Account Here">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserId" layoutX="787.0" layoutY="300.0" prefHeight="30.0" prefWidth="278.0" promptText="UserId" />
+      <TextField fx:id="txtName" layoutX="787.0" layoutY="392.0" prefHeight="30.0" prefWidth="278.0" promptText="Name" />
+      <TextField fx:id="txtPw" layoutX="787.0" layoutY="491.0" prefHeight="30.0" prefWidth="278.0" promptText="Password" />
+      <Label layoutX="783.0" layoutY="270.0" text="UserId">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button layoutX="787.0" layoutY="576.0" mnemonicParsing="false" onAction="#btnRegisterOnAction" prefHeight="30.0" prefWidth="278.0" style="-fx-background-color: brown;" text="Register" textFill="#fffbfb">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="71.0" fitWidth="79.0" layoutX="823.0" layoutY="54.0">
+         <image>
+            <Image url="@../Image/d70f1-registration-icon.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="823.0" layoutY="125.0" prefHeight="5.0" prefWidth="200.0" style="-fx-background-color: BLACK;" />
+   </children>
+</AnchorPane>
